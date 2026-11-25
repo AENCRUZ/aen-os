@@ -115,7 +115,12 @@ export const projects: Project[] = [
     ],
     stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'GitHub Pages'],
     accent: '#22c55e',
-    screenshots: [],
+    screenshots: [
+      {
+        src: 'projects/aen-os.webp',
+        alt: 'The aen.os desktop: pixel icons for About, Projects, Stack, Contact, Toy Box and Trash, with Mochi the cat sitting near the taskbar',
+      },
+    ],
     links: [{ label: 'Source', href: 'https://github.com/AENCRUZ' }],
   },
 ]
