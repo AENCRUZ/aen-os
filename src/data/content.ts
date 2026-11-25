@@ -14,7 +14,7 @@ export const profile = {
   tzLabel: 'PHT',
   bio: [
     "Hi, I'm Aen! I'm a CS student who likes building things people can actually use, from web apps with real backends to desktop apps with a lot of personality.",
-    "So far that's meant an AI-assisted skin health tool, a virtual pet that keeps you productive, and an arcade take on the FLAMES game. This site is the newest one: a tiny OS you can poke around in.",
+    "I like mixing useful with playful, so my projects range from practical tools to games and interactive stories. This site is one of them: a tiny OS you can poke around in. Open Projects to see the rest.",
   ],
   now: 'Building aen.os, one window at a time.',
   email: 'angelyncruzat123@gmail.com',
@@ -100,6 +100,30 @@ export const projects: Project[] = [
       { label: 'Play it', href: 'https://aencruz.github.io/flames-love-calculator/' },
       { label: 'Source', href: 'https://github.com/AENCRUZ/flames-love-calculator' },
     ],
+  },
+  {
+    slug: 'sitting-pretty',
+    name: 'Sitting Pretty',
+    year: 'Interactive short',
+    tagline: 'A daughter, a wedding, and the life she left behind.',
+    description: [
+      "An interactive short story with a soundtrack, inspired by Madds Buckley's song. The words and drawings are my own interpretation of it.",
+      'Best experienced with sound on.',
+    ],
+    highlights: [
+      'Cinematic title sequence with a skippable opening',
+      'Story scored to a piano ballad, with a watch-again ending',
+      'Mobile friendly, edge to edge on notched phones',
+    ],
+    stack: ['HTML', 'CSS', 'JavaScript', 'Vercel'],
+    accent: '#8aa2cf',
+    screenshots: [
+      {
+        src: 'projects/sitting-pretty.webp',
+        alt: 'Sitting Pretty title screen: the title in cream italic serif on a dark wine background, a thin blue line drawn across the sky, and a "begin" link',
+      },
+    ],
+    links: [{ label: 'Watch it', href: 'https://sitting-pretty.vercel.app/' }],
   },
   {
     slug: 'aen-os',
