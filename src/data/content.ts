@@ -121,7 +121,10 @@ export const projects: Project[] = [
         alt: 'The aen.os desktop: pixel icons for About, Projects, Stack, Contact, Toy Box and Trash, with Mochi the cat sitting near the taskbar',
       },
     ],
-    links: [{ label: 'Source', href: 'https://github.com/AENCRUZ' }],
+    links: [
+      { label: 'Live site', href: 'https://aencruz.github.io/aen-os/' },
+      { label: 'Source', href: 'https://github.com/AENCRUZ/aen-os' },
+    ],
   },
 ]
 

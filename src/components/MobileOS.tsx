@@ -5,6 +5,7 @@ import { APPS, LAUNCHERS, accentFor, type AppId } from '../os/apps'
 import { OsContext, type OpenOptions, type OsApi } from '../os/OsContext'
 import { profile } from '../data/content'
 import { CatLayer } from '../cat/CatLayer'
+import { Wallpaper } from './Wallpaper'
 import { useCat } from '../cat/catStore'
 
 interface Screen {
@@ -51,7 +52,8 @@ export function MobileOS() {
 
   return (
     <OsContext.Provider value={api}>
-      <div className="wallpaper fixed inset-0 flex flex-col pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
+      <div className="wallpaper isolate fixed inset-0 flex flex-col pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
+        <Wallpaper stars={30} moon={false} />
         {/* Status bar */}
         <div className="flex h-9 shrink-0 items-center justify-between bg-black/40 px-4 text-[20px]">
           <span className="font-pixel text-[10px]">

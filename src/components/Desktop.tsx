@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react'
 import { FileItem } from './FileItem'
 import { CatLayer } from '../cat/CatLayer'
+import { Wallpaper } from './Wallpaper'
 import { Taskbar } from './Taskbar'
 import { TASKBAR_H, Window, clampPosition } from './Window'
 import { APPS, LAUNCHERS, accentFor, type AppId } from '../os/apps'
@@ -74,6 +75,7 @@ export function Desktop({ onRestart, welcome }: { onRestart: () => void; welcome
         onClick={() => setSelected(null)}
       >
         <h1 className="sr-only">aen.os, a portfolio desktop</h1>
+        <Wallpaper />
 
         <ul
           aria-label="Desktop icons"
